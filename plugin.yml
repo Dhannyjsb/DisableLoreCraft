@@ -1,0 +1,10 @@
+name: DisableLoreCraft
+main: online.inferniaserver.mc.main
+version: 1.0-Beta
+commands:
+ disablelorecraft:
+  description: /<command> [reload]
+  permission: disablelorecraft.admin
+permissions:
+ disablelorecraft.*:
+  default: op 

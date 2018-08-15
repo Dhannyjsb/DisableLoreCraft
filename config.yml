@@ -1,0 +1,4 @@
+lore: '&3Craft Item'
+message-craft: '&7[&aiCraft&7]&3Hanya bisa dicraft melalui Blacksmith'
+message-consume: '&7[&aiCraft&7]&3Item Craft Tidak Bisa diminum'
+message-use: '&7[&aiCraft&7]&3Item tidak bisa digunakan'
