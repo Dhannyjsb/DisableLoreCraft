@@ -40,10 +40,11 @@ public class main extends JavaPlugin implements Listener,CommandExecutor{
 	        if(command.getName().equalsIgnoreCase("disablelorecraft")){
 	            if(sender.hasPermission("disablelorecraft.admin")){
 	                if(arg.length < 1){
-	                    sender.sendMessage(getConfig().getString("prefix").replace("&", "§") + "§a /disablelorecraft reload" + " §7-§b Reload Plugin");
-	                    sender.sendMessage(getConfig().getString("prefix").replace("&", "§") + "§a /disablelorecraft status" + " §7-§b Cek Status Item Lore");
-	                    sender.sendMessage(getConfig().getString("prefix").replace("&", "§") + "§a /disablelorecraft set" + " §7-§b add Lore to Item");
-	                    sender.sendMessage(getConfig().getString("prefix").replace("&", "§") + "§a /disablelorecraft remove" + " §7-§b remove Lore Status Item");
+	                    sender.sendMessage("----------------"+getConfig().getString("prefix").replace("&", "§")+"----------------");   	
+	                    sender.sendMessage("§a /disablelorecraft reload" + " §7-§b Reload Plugin");
+	                    sender.sendMessage("§a /disablelorecraft status" + " §7-§b Cek Status Item Lore");
+	                    sender.sendMessage("§a /disablelorecraft set" + " §7-§b add Lore to Item");
+	                    sender.sendMessage("§a /disablelorecraft remove" + " §7-§b remove Lore Status Item");
 	                    return true;
 	                } if(arg[0].equals("reload")) {
 	                      reloadConfig();
