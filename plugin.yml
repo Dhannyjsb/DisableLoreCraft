@@ -1,6 +1,6 @@
 name: DisableLoreCraft
 main: online.inferniaserver.mc.main
-version: 1.0-Beta
+version: 1.2-Beta
 commands:
  disablelorecraft:
   description: /<command> [reload]
