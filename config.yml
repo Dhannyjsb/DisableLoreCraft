@@ -1,4 +1,9 @@
+# Items have this lore cannot be crafted
 lore: '&3Craft Item'
-message-craft: '&7[&aiCraft&7]&3Hanya bisa dicraft melalui Blacksmith'
-message-consume: '&7[&aiCraft&7]&3Item Craft Tidak Bisa diminum'
-message-use: '&7[&aiCraft&7]&3Item tidak bisa digunakan'
+# Prefix for Message
+prefix: '&7[&aDLC&7]'
+# Message
+message:
+  craft: '&3Hanya bisa dicraft melalui Blacksmith'
+  consume: '&3Item Craft Tidak Bisa diminum'
+  use: '&3Item tidak bisa digunakan'
