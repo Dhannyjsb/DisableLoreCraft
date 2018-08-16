@@ -1,6 +1,5 @@
 package online.inferniaserver.mc;
 
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -14,7 +13,6 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerItemConsumeEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
-
 
 public class main extends JavaPlugin implements Listener,CommandExecutor{
 
@@ -30,7 +28,7 @@ public class main extends JavaPlugin implements Listener,CommandExecutor{
 	  public void onEnable()
 	  {
 	    getServer().getPluginManager().registerEvents(this, this);
-	    this.saveDefaultConfig();
+	    saveDefaultConfig();
 	    System.out.print(ChatColor.AQUA+"Disable Lore Craft Enable");
 	  }
 	  
@@ -47,11 +45,8 @@ public class main extends JavaPlugin implements Listener,CommandExecutor{
 	                    sender.sendMessage("disablelorecraft reload");
 	                    return true;
 	                } if(arg[0].equals("reload")) {
-	                	this.reloadConfig();
-	                    Bukkit.getPluginManager().disablePlugin(this);
-	                    this.reloadConfig();
-	                    Bukkit.getPluginManager().enablePlugin(this);
-	                    this.reloadConfig();
+	                      this.saveDefaultConfig();
+	                      this.reloadConfig();
 	                    sender.sendMessage(ChatColor.RED + " plugin has been reloaded");
 	                    return true;
 	                }else {
